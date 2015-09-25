@@ -1,0 +1,52 @@
+<!-- Home CMS Block BOF -->
+<div class="clearboth"></div>
+<div class="cmsblock-container formobile">
+
+    <?php $cms_block1 = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('home_cms_block_1');
+    if ($cms_block1 && $cms_block1->getIsActive()) {
+    ?>
+    <div class="home_cms_block_a">
+           <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('home_cms_block_1')->toHtml(); ?>
+    </div>
+    <?php  } ?>
+    
+    <?php $cms_block2 = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('home_cms_block_2');
+    if ($cms_block2 && $cms_block2->getIsActive()) {
+    ?>
+    <div class="home_cms_block_a">
+           <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('home_cms_block_2')->toHtml(); ?>
+    </div>
+    <?php  } ?>
+    
+    <div class="clearboth"></div>
+    
+    <?php $cms_blockj = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('home_cms_block_jennifermillerjewelry');
+    if ($cms_blockj && $cms_blockj->getIsActive()) {
+    ?>
+    <div class="home_cms_block_b">
+           <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('home_cms_block_jennifermillerjewelry')->toHtml(); ?>
+    </div>
+    <div class="clearboth"></div>
+    <?php  } ?>
+    
+    <?php $cms_block3 = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('home_cms_block_3');
+    if ($cms_block3 && $cms_block3->getIsActive()) {
+    ?>
+    <div class="home_cms_block_c">
+           <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('home_cms_block_3')->toHtml(); ?>
+    </div>
+    <?php  } ?>
+    
+    <?php $cms_block4 = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('home_cms_block_4');
+    if ($cms_block4 && $cms_block4->getIsActive()) {
+    ?>
+    <div class="home_cms_block_c">
+           <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('home_cms_block_4')->toHtml(); ?>
+    </div>
+    <?php  } ?>
+    
+    <div class="clearboth"></div>
+</div>
+<!-- Home CMS Block EOF -->
+
+
