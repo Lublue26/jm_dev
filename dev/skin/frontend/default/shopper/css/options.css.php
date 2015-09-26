@@ -451,7 +451,7 @@ a.dissd {
     }
     
     h2.our_latest_styles{
-        color: #828282;
+        color: #404041;
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         margin-left:0px;
@@ -469,13 +469,16 @@ a.dissd {
         background-position: -35px 0px;
     }
     
+    .catalogsearch-result-index .col2-left-layout .col-main,
     .catalog-category-view .col2-left-layout .col-main {
         width: 100%;
         margin: 0 auto;
-        padding: 30px 0 0;
+        padding: 0px 0 0;
         background-color: #fafafa;
     }
     
+    .catalogsearch-result-index .col2-left-layout .products-grid, 
+    .catalogsearch-result-index .col2-right-layout .products-grid,
     .catalog-category-view .col2-left-layout .products-grid, 
     .catalog-category-view .col2-right-layout .products-grid {
         width: 80%;
@@ -483,6 +486,7 @@ a.dissd {
         text-align: center;
     }
     
+    .catalogsearch-result-index  .two_columns_4 li.item,
     .catalog-category-view  .two_columns_4 li.item {
         width: 45%;
         margin: 10px 2.5% 20px;
@@ -494,6 +498,10 @@ a.dissd {
     
     .catalog-product-view .page-title-bg {
         background-color: #f5f5f3;
+    }
+    
+    .blck_customer_service a, .blck_customer_service a:active, .blck_customer_service a:hover, .blck_customer_service a:focus{
+        color: #404041;
     }
 }
 

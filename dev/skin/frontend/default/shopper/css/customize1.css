@@ -117,7 +117,7 @@
 
 .footer-nav-container, .navBackToTop, .free_shipping_text, .blck_customer_service {
     text-align:  center;
-    color: #000000;
+    color: #404041;
     font-weight: bold;
     font-size: 14px;
     width:100%;
@@ -126,26 +126,22 @@
     padding:0;
 }
 
-.footer-nav-container{
-    text-align:  left;
-}
-
 .footer-nav-container a, .navBackToTop a{
     text-decoration: none;
-    color: #000;
+    color: #404041;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: normal;
-    margin-left: 6%;
 }
 
 .navBackToTop a{
    font-weight: bold; 
 }
 
+.blck_customer_service a, .blck_customer_service a:active, .blck_customer_service a:hover, .blck_customer_service a:focus,
 .footer-nav-container a:active, .footer-nav-container a:hover,.footer-nav-container a:focus,
 .navBackToTop a:active, .navBackToTop a:hover,.navBackToTop a:focus{
-    color: #000;
+    color: #404041;
 }
 
 .footer-nav-container li.level0 {
@@ -185,16 +181,10 @@
 
 /*  footer nav menu */
 .footer-nav li.parent em {
-    float: right;
-    display: block;
     width: 36px;
     text-align: center;
     font-style: normal;
-    margin-right: 8%;
-}
-
-.footer-nav ul {
-    padding-left: 4%;
+    padding-left: 10px;
 }
 
 .footer-nav ul li{
@@ -279,11 +269,21 @@
     
     .cms-home .category-products{
         text-align: center;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .cms-home .category-products a.our_latest_styles{
+        font-size: 18px;
+        margin-bottom: 14px;
+        display: block;
+        text-decoration: none;
     }
     
     .cms-home .col1-layout .col-main,
     .cms-home .col1-layout .col-main .products-grid,
+    .catalogsearch-result-index .col1-layout .col-main,
+    .catalogsearch-result-index .col1-layout .col-main .products-grid,
     .catalog-category-view .col1-layout .col-main,
     .catalog-category-view .col1-layout .col-main .products-grid{
         width: 99%;
@@ -296,9 +296,12 @@
         margin-left: 2%;
         margin-right: 2%;
         border: none;
+        margin-bottom: 18px;
     }
     
+    .catalogsearch-result-index .main-container .main.row,
     .cms-home .main-container .main.row,
+    .catalogsearch-result-index .main-container .main.row,
     .catalog-category-view .main-container .main.row{
         width:100%;
     }
@@ -310,7 +313,6 @@
     .cmsblock-container {
         width: 100%;
         height: auto;
-        border-top: 1px #606060 solid;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -321,6 +323,7 @@
         margin:0;
         padding:0;
         float: left;
+        margin-top: 10px;
     }
     
     .home_cms_block_a img{
@@ -342,13 +345,13 @@
     
     .home_cms_block_b a{
         text-decoration: none;
-        color: #828282;
+        color: #404041;
         font-weight: normal;
         font-size: 14px;
     }
     
     .home_cms_block_b a:hover, .home_cms_block_b a:active,.home_cms_block_b a:focus{
-        color: #828282;
+        color: #404041;
         text-decoration: none;
         cursor: pointer;
     }
@@ -383,6 +386,8 @@
     
     .footer-info .grid_4 h4{
         text-align: center;
+        font-size: 13px;
+        line-height: 30px;
     }
     
     .footer-info .block-control {
@@ -416,14 +421,14 @@
     .footer-info .blck_two .block-content{
         display: block;
         width: 80%;
-        margin: 0px auto;
+        margin: 10px auto;
         text-align: center;
     }
     
     .footer-info .blck_three{
         border: none;
     }
-    .footer-info .blck_three h4{
+    .footer-info .blck_three h4, .footer-info .blck_two h4{
         display: none;
     }
     
@@ -471,46 +476,61 @@
     }
     
     .breadcrumbs{
+        line-height: 20px;
         width: 100%;
         text-align: center;
         margin-left: 0px;
     }
     
+    .breadcrumbs ul{
+        padding: 10px 0px;
+    }
+    
+    .catalogsearch-result-index .category-products .pager,
     .catalog-category-view .category-products .pager{
+        padding: 0px 0 0;
         border-top:none;  
         width: 45%;
         margin: 0 auto 10px; 
     }
     
+    .catalogsearch-result-index .category-products .toolbar .sorter,
     .catalog-category-view .category-products .toolbar .sorter{
         margin:0px;
     }
     
+    .catalogsearch-result-index .category-products .toolbar .sorterul,
     .catalog-category-view .category-products .toolbar .sorterul{
         width: 100%;
         text-align:center;
     }
     
+    .catalogsearch-result-index .category-products .toolbar .sorterli,
     .catalog-category-view .category-products .toolbar .sorterli{
         display: inline-block;
     }
     
-    .catalog-category-view .category-products .toolbar  .perpage{
+    .catalogsearch-result-index .category-products .toolbar .perpage,
+    .catalog-category-view .category-products .toolbar .perpage{
         display: none;
     }
     
+    .catalogsearch-result-index .col-left.sidebar,
     .catalog-category-view .col-left.sidebar{
         display:none;
     }
     
+    .catalogsearch-result-index  .products-grid .regular,
     .catalog-category-view  .products-grid .regular {
         padding-bottom: 10px;
     }
     
+    .catalogsearch-result-index .category-products,
     .catalog-category-view .category-products{
         margin-bottom: 20px;
     }
     
+    .catalogsearch-result-index .category-description,
     .catalog-category-view .category-description{
         display:none;
     }
@@ -655,6 +675,28 @@
     .checkout-onepage-index .order-review .data-table{
         border-top:none;
     }
+    
+    .cms-home .products-grid .product-name {
+        color: #828282;
+        font-size: 12px;
+    }
+    
+    .cms-home .price-box .price {
+        font-size: 12px;
+    }
+    
+    .category-image{
+       margin: 0 0 5px; 
+    }
+    
+    .catalogsearch-result-index .page-title {
+        text-align: center;
+        padding: 10px 0px 0px;
+    }
+    
+    .catalogsearch-result-index .page-title h1{
+        font-size: 20px;
+    }
         
 }
 
@@ -673,13 +715,16 @@
     
     .cms-home .col1-layout .col-main,
     .cms-home .col1-layout .col-main .products-grid,
+    .catalogsearch-result-index .col1-layout .col-main,
+    .catalogsearch-result-index .col1-layout .col-main .products-grid,
     .catalog-category-view .col1-layout .col-main,
     .catalog-category-view .col1-layout .col-main .products-grid{
         width: 100%;
         margin: 0;
     }
 
-    .cms-home .main-container .main.row,    
+    .cms-home .main-container .main.row,  
+    .catalogsearch-result-index .main-container .main.row,  
     .catalog-category-view .main-container .main.row{
         width:100%;
     }
@@ -723,6 +768,8 @@
     
     .cms-home .col1-layout .col-main,
     .cms-home .col1-layout .col-main .products-grid,
+    .catalogsearch-result-index .col1-layout .col-main,
+    .catalogsearch-result-index .col1-layout .col-main .products-grid,
     .catalog-category-view .col1-layout .col-main,
     .catalog-category-view .col1-layout .col-main .products-grid{
         width: 100%;
@@ -730,6 +777,7 @@
     }
     
     .cms-home .main-container .main.row,
+    .catalogsearch-result-index .main-container .main.row,
     .catalog-category-view .main-container .main.row{
         width:100%;
     }
@@ -756,6 +804,7 @@
         margin-left: 0px;
     }
     
+    .catalogsearch-result-index .category-products .pager,
     .catalog-category-view .category-products .pager{
         width: 100%;
     }
@@ -764,6 +813,8 @@
 @media only screen and  (max-width: 330px) {
     .cms-home .col1-layout .col-main,
     .cms-home .col1-layout .col-main .products-grid,
+    .catalogsearch-result-index .col1-layout .col-main,
+    .catalogsearch-result-index .col1-layout .col-main .products-grid,
     .catalog-category-view .col1-layout .col-main,
     .catalog-category-view .col1-layout .col-main .products-grid{
         width: 100%;
@@ -771,6 +822,7 @@
     }
     
     .cms-home .main-container .main.row,
+    .catalogsearch-result-index .main-container .main.row,
     .catalog-category-view .main-container .main.row{
         width:100%;
     }

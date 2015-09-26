@@ -731,7 +731,7 @@ jQuery(function ($) {
       $("#product_gallery_slider")
         .flexslider({
           animation:"slide",
-          slideshow:true,
+          slideshow:false,
           useCSS:false,
           touch:true,
           video:false,
@@ -838,7 +838,7 @@ jQuery(function ($) {
   });
 
   //footer-nav
-  $('.footer-nav li.parent > a').prepend('<em>+</em>');
+  $('.footer-nav li.parent > a').append('<em>+</em>');
   $('.footer-nav li.parent > a').click(function () {
     var $em = $(this).find('em');
     if ($em.text() == '+') {

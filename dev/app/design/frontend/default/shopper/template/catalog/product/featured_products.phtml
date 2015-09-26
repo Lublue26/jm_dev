@@ -34,7 +34,10 @@ $imgY = $helper->calculateHeight($imgX);
 ?>
 <?php if ($_productCollection->count()): ?>
     <div class="category-products">
-        <h2 class="our_latest_styles"><?php echo $this->__($this->getBlockTitle()); ?></h2>
+        <h2 class="our_latest_styles fordesktop"><?php echo $this->__($this->getBlockTitle()); ?></h2>
+        
+        <a class="our_latest_styles formobile"><?php echo $this->__($this->getBlockTitle()); ?></a>
+        
         <?php $_collectionSize = $_productCollection->count(); ?>
         <ul class="products-grid <?php // echo $grid_class; ?>">
             <?php foreach ($_productCollection as $_product): ?>
